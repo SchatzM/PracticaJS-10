@@ -1,1 +1,69 @@
 @charset "UTF-8";
+
+/* Colores iniciales del body y su contenido */
+body {
+	background-color: #000;
+	color: #000;
+}
+
+/* Modifica el aspecto del input para encajar con el texto que le rodea */
+input {
+	background: inherit;
+	color: inherit;
+	border: inherit;
+	font-size: inherit;
+	text-align: center;
+	width: 12px
+}
+
+/* Ocultamos las flechas del input */
+/* propiedades para Chrome, Safari, Edge & Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0
+}
+/* y para Firefox */
+input[type=number] {
+	-moz-appearance: textfield
+}
+
+/* Efecto de transición suave al cambiar el color del fondo y texto */
+.colorCambiante {
+	transition: background-color .8s ease-in-out, color 1s ease-in-out;
+}
+
+/* Diferentes clases con los colores que se aplicarán los diferentes días de la semana */
+.lunes {
+	background-color: #FFC312;
+	color: #002CF4
+}
+
+.martes {
+	background-color: #C4E538;
+	color: #9B00F4
+}
+
+.miércoles {
+	background-color: #12CBC4;
+	color: #F45600
+}
+
+.jueves {
+	background-color: #FDA7DF;
+	color: #19F400
+}
+
+.viernes {
+	background-color: #ED4C67;
+	color: #00F42E
+}
+
+.sábado {
+	background-color: #EE5A24;
+	color: #00F4C3
+}
+
+.domingo {
+	background-color: #006266;
+	color: #F45F00
+}
