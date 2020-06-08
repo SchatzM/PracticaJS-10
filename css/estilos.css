@@ -13,7 +13,11 @@ input {
 	border: inherit;
 	font-size: inherit;
 	text-align: center;
-	width: 12px
+	width: 14px
+}
+/* Elimina el borde alrededor del input cuando está enfocado */
+input:focus{
+	outline: none;
 }
 
 /* Ocultamos las flechas del input */
